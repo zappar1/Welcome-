@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NEXUS — Coursemate Experience</title>
+<style>
+:root{--cyan:#72e6ff;--violet:#a98bff;--pink:#ff6fb5;--text:#edf7ff;--muted:#9fb3c8}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,system-ui,sans-serif;background-image:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.72)),url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201600%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%2308040b%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23020207%22/%3E%3C/linearGradient%3E%3CradialGradient%20id%3D%22r%22%3E%3Cstop%20stop-color%3D%22%23b40020%22%20stop-opacity%3D%22.5%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2309000a%22%20stop-opacity%3D%220%22/%3E%3C/radialGradient%3E%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22/%3E%3C/filter%3E%3C/defs%3E%3Crect%20width%3D%221600%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22/%3E%3Cellipse%20cx%3D%22800%22%20cy%3D%22350%22%20rx%3D%22650%22%20ry%3D%22430%22%20fill%3D%22url%28%23r%29%22%20filter%3D%22url%28%23blur%29%22/%3E%3Cg%20fill%3D%22%23050508%22%20stroke%3D%22%235d1424%22%20stroke-width%3D%225%22%3E%3Cpath%20d%3D%22M90%201000V520q0-190%20145-190t145%20190v480z%22/%3E%3Cpath%20d%3D%22M340%201000V470q0-230%20175-230t175%20230v530z%22/%3E%3Cpath%20d%3D%22M625%201000V390q0-270%20175-270t175%20270v610z%22/%3E%3Cpath%20d%3D%22M925%201000V470q0-230%20175-230t175%20230v530z%22/%3E%3Cpath%20d%3D%22M1215%201000V520q0-190%20145-190t145%20190v480z%22/%3E%3C/g%3E%3Cg%20fill%3D%22%23c51f3c%22%20stroke%3D%22%23ff526c%22%20stroke-width%3D%223%22%3E%3Cpath%20d%3D%22M130%20455q105-120%20210%200l-25%20150-160%200z%22/%3E%3Cpath%20d%3D%22M385%20375q130-145%20260%200l-30%20175-200%200z%22/%3E%3Cpath%20d%3D%22M665%20300q135-160%20270%200l-30%20190-210%200z%22/%3E%3Cpath%20d%3D%22M955%20375q130-145%20260%200l-30%20175-200%200z%22/%3E%3Cpath%20d%3D%22M1260%20455q105-120%20210%200l-25%20150-160%200z%22/%3E%3C/g%3E%3Cg%20fill%3D%22%2307070a%22%20stroke%3D%22%23ff8a9b%22%20stroke-width%3D%223%22%3E%3Cpath%20d%3D%22M175%20485h120l-22%2048H197z%22/%3E%3Cpath%20d%3D%22M420%20405h190l-30%2058H450z%22/%3E%3Cpath%20d%3D%22M700%20330h200l-30%2065H730z%22/%3E%3Cpath%20d%3D%22M990%20405h190l-30%2058h-130z%22/%3E%3Cpath%20d%3D%22M1290%20485h120l-22%2048h-76z%22/%3E%3C/g%3E%3Cg%20fill%3D%22%2379f7ff%22%20opacity%3D%22.9%22%20font-family%3D%22monospace%22%20font-size%3D%2228%22%3E%3Ctext%20x%3D%2260%22%20y%3D%2290%22%3ENEXUS%20//%20SECURE%20TERMINAL%3C/text%3E%3Ctext%20x%3D%221050%22%20y%3D%22120%22%3EACCESS%3A%20SIMULATION%3C/text%3E%3Ctext%20x%3D%2290%22%20y%3D%22930%22%3E01001110%2001000101%2001011000%2001010101%2001010011%3C/text%3E%3C/g%3E%3Cg%20stroke%3D%22%23ff244b%22%20opacity%3D%22.3%22%3E%3Cpath%20d%3D%22M0%20720H1600M0%20760H1600M0%20800H1600%22/%3E%3C/g%3E%3C/svg%3E");background-size:cover;background-position:center;background-attachment:fixed;background-color:#020207;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.15;background-image:linear-gradient(rgba(114,230,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(114,230,255,.08) 1px,transparent 1px);background-size:42px 42px}.particle{position:fixed;width:2px;height:2px;border-radius:50%;background:#bff5ff;opacity:.6;animation:float 8s linear infinite;pointer-events:none}@keyframes float{from{transform:translateY(110vh);opacity:0}20%{opacity:.7}to{transform:translateY(-10vh);opacity:0}}.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px}.card{width:min(760px,100%);padding:30px 24px;border:1px solid rgba(114,222,255,.25);border-radius:28px;background:rgba(10,16,35,.8);backdrop-filter:blur(18px);box-shadow:0 0 60px rgba(73,181,255,.09),0 24px 80px rgba(0,0,0,.45);animation:enter .55s ease}@keyframes enter{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}.brand{letter-spacing:.28em;color:var(--cyan);font-size:12px;font-weight:800}h1{font-size:clamp(28px,6vw,52px);margin:12px 0;line-height:1.05}h2{font-size:clamp(23px,5vw,36px);margin:8px 0 14px}p{color:var(--muted);font-size:17px;line-height:1.65}.terminal{font-family:ui-monospace,monospace;color:#bdf4ff}.bar{height:7px;background:#111b2e;border-radius:20px;overflow:hidden;margin:18px 0}.bar span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink));box-shadow:0 0 20px var(--cyan)}input{width:100%;padding:16px 17px;border-radius:15px;border:1px solid rgba(114,222,255,.25);outline:none;background:rgba(3,7,18,.8);color:white;font-size:17px;margin:12px 0}button{border:1px solid rgba(114,230,255,.35);background:linear-gradient(135deg,rgba(114,230,255,.15),rgba(169,139,255,.14));color:white;padding:13px 19px;border-radius:14px;font-size:16px;font-weight:750;cursor:pointer;margin:6px;transition:.2s}button:hover{transform:translateY(-2px);border-color:var(--cyan);box-shadow:0 0 24px rgba(114,230,255,.18)}.primary{background:linear-gradient(135deg,#1684a0,#7054c9)}.option{width:min(100%,520px);display:block;margin:10px auto}.small{font-size:13px;color:#7690a8}.result{padding:16px;border:1px solid rgba(114,222,255,.25);border-radius:18px;background:rgba(0,0,0,.2);margin:18px 0}.hack{font-family:ui-monospace,monospace;color:#ff536d;text-align:left;white-space:pre-wrap;line-height:1.7;text-shadow:0 0 10px rgba(255,40,70,.35)}.warn{color:#ffd27d}.hack{filter:drop-shadow(0 0 8px rgba(255,30,60,.25))}.footer{margin-top:20px;text-align:center;color:#637a91;font-size:12px}.hack{min-height:260px;padding:18px;border:1px solid rgba(255,40,60,.28);border-radius:18px;background:rgba(0,0,0,.42);box-shadow:inset 0 0 45px rgba(255,0,45,.08),0 0 35px rgba(255,0,45,.06)}
+</style>
+</head><body>
+<script>for(let i=0;i<34;i++){let s=document.createElement('span');s.className='particle';s.style.left=Math.random()*100+'vw';s.style.animationDelay=(-Math.random()*8)+'s';s.style.animationDuration=(6+Math.random()*7)+'s';document.body.appendChild(s)}</script>
+<div class="wrap"><main class="card" id="app"></main></div>
+<script>
+/* NEXUS is a fictional classmate game. It does not access any real portal, account, CGPA or private database. */
+const people=[
+['Buhari Bello','male'],['Shafiu Malami','male'],['Nwaiwu Augustine','male'],['John Nuhu D','male'],['Temidayo Segun','female'],['Abdulhakim Khalil Ibrahim','male'],['Abdulmalik Nuradeen','male'],['Auwal Muhammad','male'],['Usman Abubakar','male'],['Habibu Muhammad','male'],['Abubakar Yusuf','male'],['Ibrahim Abubakar','male'],['Hassan Doctor','male'],['Matthew Kyoune Bubo','male'],['Umar Abdullahi','male'],['Muhammad Nura','male'],['Lawal Waliyullah Oyekunle','male'],['Adam Emmanuel Junior','male'],['Olabiyi Theophilus Oluwapelumi','male'],['Raji Ayomide Toheeb','male'],['Muhammad Ibrahim Gandu','male'],['Adedoyin Caleb','male'],['Yusuf Mustapha Damilola','male'],['Abdulrafiu Ibrahim','male'],['Jonathan Joel','male'],['Ahmad Muhammad Auwal','male'],['Ajiboye Isaac Ifedapo','male'],['Danladi Jeremiah','male'],['Mohammed Haruna','male'],['Issa Abdulwaris Eleja','male'],['Abdullah Fauzan Abdulhakeem','male'],['ABDULKAREEM MUIZ','male'],['Abubakar Rasheed Kehinde','male'],['Mohammed Haruna','male'],['Saba Isaac Ndarani','male'],['Ibrahim Isah','male'],['Abdulkadir Mubarak','male'],['Ibrahim Iliya','male'],['Abdulwahab Abdulhameed Damilola','male'],['Hussaini Abdullahi','male'],
+['Adelaja Fathia Eniola','female'],['Abubakar Farida Ibrahim','female'],['Jemimah Isah','female'],['Balkisu Abdulazeez','female'],['Bello Aminah','female'],['Amina Umar','female'],['Onochie Faith Chinasa','female'],['Mbaekube Chinwendu Favour','female'],['Fatima Shittu','female'],['Ebenezer Esther Ch Anuoluwa','female'],['Precious Moses','female'],['Sumayyah Nuhu Ja\'afar','female'],['Abubakar Khadija Sadiq','female'],['Nwankwo Chinecherem Maryann','female'],['Nafisat Abubakar','female'],['Ajibowu Favour Oreoluwa','female'],['Saleemat Luqman Salati','female'],['Yusuf Abigail','female'],['Aliyu Habiba','female'],['Farouk Hafsat Dogon Daji','female'],['Maryam Lawal','female'],['Ezinwa Ifeoma Lucy','female'],['Zainab Nna\'aburu Mohammed','female'],['Isiaka Victoria Onyinoyi','female'],['Saidu Zeenatullah','female'],['Abubakar Sadiq Aisha','female'],['Ikeh Chilomma Mercy','female'],['Maryam Bello Usman','female'],['Ochimana Blessing Chubiyojo','female'],['Obeni Mercy Chidera','female'],['Abdulkareem Idayat Opeyemi','female'],['Akidele Fauziya Ayomikun','female'],['Salaudeen Hawau','female'],['Abdulkareem Aishah Ayomide','female'],['Matthew Ojochona Emmanuella','female'],['Maryam Abdulkadir','female'],['Muhammad Firdaus Abike','female'],['Adeniyi Abdullahi Eniola','female'],['Nofiu Qudroh Ayomide','female'],['Tajudeen Sumayyah Olabisi','female'],['Oladimeji Aisha','female'],['Munirudeen Aishah','female'],['Bello Fathia Ayinke','female'],['Ismail-Jibril Maryam','female'],['Hafsat Isah','female'],['Odiete Joy','female'],['Onuh Grace Owoya','female'],['Umar Oziohu Nana-Aisha','female'],['Abdullahi Fatima Zarah','female'],['Idris Sekina','female'],['Ibrahim Rukayat Tolani','female'],['Saka Azeezat Titilope','female'],['Shehu Sama Madina','female'],['Fatimah Nnakawu Muhammad','female'],['Quadri Samiat Eniola','female'],['Abdulmumeen Sekinat Adebayo','female'],['Garba Maryam','female'],['Usman Fatima Binta','female'],['Adamu Fatima Tanko','female'],['Musa Blessing Shuka','female'],['AbdulKareem Sumayyah Adewumi','female'],['Musa Rahmat','female'],['Abdulrazaq Salmah Apata','female'],['Rahamah Abdulwahid','female'],['Maryam Bukhari','female'],['Abdulkareem Aminat Ayomide','female'],['Ajadi Ayomide Aalimah','female'],['Aneke Nkemdirim Loveth','female'],['Gbadero Deborah Opeyemi','female'],['Habiba Lawal Ibrahim','female'],['Ahmad Fauziyat Gbemisola','female'],['Abdullahi Haleemah','female'],['ISMAIL SAFIYA WALI','female']
+].map(([fullName,gender])=>({fullName,gender}));
+const app=document.getElementById('app');let user=null;const norm=s=>s.toLowerCase().trim().replace(/\s+/g,' ');
+function render(x){app.innerHTML=x}
+function findPerson(x){
+ let k=norm(x);
+ return people.find(p=>{
+   let n=norm(p.fullName);
+   return n===k || n.split(" ").includes(k);
+ });
+}
+function start(){render(`<div class="brand">NEXUS // CLASS EXPERIENCE</div><h1>Welcome, visitor. 👋</h1><p>Wow... good to have you here.</p><p class="terminal">Can I know your real name?</p><input id="name" placeholder="Enter your name..." autocomplete="off"><button class="primary" onclick="identify()">CONTINUE →</button><div class="footer">A fictional interactive experience. No real university portal is accessed.</div>`)}
+function identify(){user=findPerson(document.getElementById('name').value);if(!user){render(`<div class="brand">IDENTITY CHECK</div><h2>⚠️ Identity not found</h2><p>Hmm... I don't recognize that name in my database. 😂</p><button onclick="start()">TRY AGAIN</button>`);return}render(`<div class="brand">IDENTITY CONFIRMED ✓</div><h2>Welcome, ${user.fullName}. 😎</h2><p><i>Interesting... you gave me one name and somehow I know your full name.</i></p><p><b>Do you know where you are right now?</b></p><button class="option" onclick="next()">YES 😎</button><button class="option" onclick="next()">NO 🤔</button>`)}
+function next(){render(`<div class="brand">NEXUS</div><h2>😂 Let's see whether I actually know anything about you.</h2><p>These questions are about university life generally — not who sits where in class.</p><button class="primary" onclick="q1()">CONTINUE →</button>`)}
+function q1(){render(`<div class="brand">QUESTION 01</div><h2>What made you choose your course?</h2><input placeholder="Your answer..."><button onclick="q2()">CONTINUE</button>`)}
+function q2(){render(`<div class="brand">QUESTION 02</div><h2>Are you actually enjoying university life so far?</h2><button class="option" onclick="q3('yes')">YES 😎</button><button class="option" onclick="q3('no')">NOT REALLY 😂</button>`)}
+function q3(a){render(`<h2>${a==='yes'?'Good. At least someone is enjoying themselves. 😂':'Ahhh... so you\'re surviving, not living. I understand. 😂'}</h2><button onclick="q4()">NEXT →</button>`)}
+function q4(){render(`<div class="brand">QUESTION 03</div><h2>If someone suddenly sent you ₦100,000, what's the FIRST thing you'd do? 😂</h2><button class="option" onclick="q5()">Save it 💰</button><button class="option" onclick="q5()">Start a business 💼</button><button class="option" onclick="q5()">Spend it 😂</button><button class="option" onclick="q5()">Help someone ❤️</button>`)}
+function q5(){render(`<h2>Interesting choice. 👀</h2><p>I'm collecting evidence for absolutely no reason. 😂</p><button onclick="q6()">NEXT →</button>`)}
+function q6(){render(`<div class="brand">QUESTION 04</div><h2>What is one thing you wish you were already very good at?</h2><input placeholder="Type your answer..."><button onclick="relationship()">CONTINUE</button>`)}
+function relationship(){
+  const word=user.gender==="male"?"girlfriend":"boyfriend";
+  render(`<div class="brand">QUESTION 05 // PRIVATE 😂</div>
+  <h2>Do you have a ${word} in your department? 👀</h2>
+  <button class="option" onclick="relYes()">YES ❤️</button>
+  <button class="option" onclick="relNo()">NO 😂</button>`);
+}
+
+function relYes(){
+  if(user.fullName==="Hussaini Abdullahi"){
+    render(`<h2>😂 No need, I know her name already.</h2>
+    <p><b>Amina Hussaini (Yabbado)</b> 👀❤️</p>
+    <button onclick="q7()">NEXT →</button>`);
+    return;
+  }
+  const word=user.gender==="male"?"her":"him";
+  render(`<h2>😂 AHA! Interesting...</h2>
+  <p>Search for ${word}'s name from the database. 👀</p>
+  <input id="partner" list="peopleList" placeholder="Enter ${word}'s name..." autocomplete="off">
+  <datalist id="peopleList">${people.filter(p=>p.gender!==user.gender).map(p=>`<option value="${p.fullName}">`).join("")}</datalist>
+  <button class="primary" onclick="partner()">SEARCH NAME →</button>`);
+}
+
+function partner(){
+  const value=document.getElementById("partner").value.trim();
+  if(!value){
+    render(`<h2>👀 You need to enter a name first.</h2>
+    <button onclick="relationship()">GO BACK</button>`);
+    return;
+  }
+
+  const found=findPerson(value);
+  if(found && found.gender!==user.gender){
+    const pronoun=found.gender==="female"?"her":"him";
+    render(`<div class="brand">NAME SEARCH ✓</div>
+    <h2>👀 I found ${pronoun}!</h2>
+    <p><b>${found.fullName}</b> is in the database. 😂</p>
+    <p class="small">Just a fictional terminal joke — no real message was sent.</p>
+    <button onclick="q7()">NEXT →</button>`);
+  }else{
+    render(`<div class="brand">NAME SEARCH</div>
+    <h2>👀 Hmm...</h2>
+    <p>I couldn't find a matching opposite-gender name in this fictional database.</p>
+    <button onclick="relYes()">TRY AGAIN</button>
+    <button onclick="q7()">NEXT →</button>`);
+  }
+}
+
+function suggestion(){
+  const opposite=people.filter(p=>p.gender!==user.gender && p.fullName!==user.fullName);
+  if(!opposite.length)return null;
+  return opposite[Math.floor(Math.random()*opposite.length)];
+}
+
+function relNo(){
+  if(user.fullName==="Hussaini Abdullahi"){
+    render(`<div class="brand">SPECIAL CASE 😂</div>
+    <h2>What about Yabbado? 👀❤️</h2>
+    <p>You can't just leave it at NO. 😂</p>
+    <p><b>Amina Hussaini (Yabbado)</b></p>
+    <button onclick="q7()">NEXT →</button>`);
+    return;
+  }
+
+  const s=suggestion();
+  if(!s){
+    render(`<h2>😂 No suggestion available.</h2><button onclick="q7()">NEXT →</button>`);
+    return;
+  }
+
+  render(`<div class="brand">LOVE TERMINAL 💌</div>
+  <h2>😂 I can't leave you single!</h2>
+  <p>I will send messages to <b>${s.fullName}</b>. 👀❤️</p>
+  <p>Should I send it?</p>
+  <button class="primary" onclick="sendProposal('${encodeURIComponent(s.fullName)}','${s.gender}')">YES, SEND IT 💌</button>
+  <button onclick="declineProposal()">NO, DON'T SEND 😂</button>`);
+}
+
+function sendProposal(encodedName, gender){
+  const name=decodeURIComponent(encodedName);
+  render(`<div class="brand">MESSAGE SENT 💌</div>
+  <h2>😂 Message sent to <b>${name}</b>!</h2>
+  <p>Let's wait and see what happens... 👀</p>`);
+
+  setTimeout(()=>{
+    render(`<div class="brand">😂 GOT YOU!</div>
+    <h2>I'm kidding 🤣</h2>
+    <p>No real message was sent to <b>${name}</b>.</p>
+    <button onclick="q7()">NEXT →</button>`);
+  },7000);
+}
+
+function declineProposal(){
+  render(`<div class="brand">NEXUS 😂</div>
+  <h2>Okay then! 😂</h2>
+  <p>Keep living the single life 🤣❤️</p>
+  <button onclick="q7()">NEXT →</button>`);
+}
+
+function q7(){render(`<div class="brand">QUESTION 06</div><h2>When you have free time, what do you usually prefer?</h2><button class="option" onclick="q8()">Sleep 😴</button><button class="option" onclick="q8()">Social media 📱</button><button class="option" onclick="q8()">Go out 🚶</button><button class="option" onclick="q8()">Study 📚</button>`)}
+function q8(){
+ render(`<div class="brand">QUESTION 07 // NELFUND 😂</div>
+ <h2>What will happen if NELFUND suddenly stops giving upkeep? 💀</h2>
+ <button class="option" onclick="nelfundReply(1)">Students will start budgeting every naira 😂</button>
+ <button class="option" onclick="nelfundReply(2)">Campus survival mode will activate 😭</button>
+ <button class="option" onclick="nelfundReply(3)">Everybody will remember their rich uncle 💀</button>
+ <button class="option" onclick="nelfundReply(4)">“Who has ₦500?” becomes the greeting 😂</button>`);
+}
+function nelfundReply(n){
+ const replies={
+ 1:"😂 Financial mathematics would suddenly become compulsory.",
+ 2:"😭 Survival mode activated.",
+ 3:"💀 Emergency contacts would become very important.",
+ 4:"😂 That question would probably become the new campus greeting."
+ };
+ render(`<h2>${replies[n]}</h2><button onclick="q9()">NEXT →</button>`);
+}
+function q9(){render(`<div class="brand">QUESTION 08</div><h2>If you could change ONE thing about university life, what would it be?</h2><input placeholder="Your answer..."><button onclick="processing()">SUBMIT</button>`)}
+function processing(){render(`<div class="brand terminal">PROCESSING YOUR RESPONSES...</div><div class="bar"><span></span></div><p class="terminal">ANALYZING...<br>COMPLETING SESSION...<br>STATUS: COMPLETE ✓</p><button onclick="finalQ()">CONTINUE</button>`)}
+function finalQ(){
+ render(`<div class="brand">FINAL QUESTION</div>
+ <h2>Do you agree that I actually know something important about you? 👀</h2>
+ <button class="option" onclick="finalYes()">YES 😳</button>
+ <button class="option" onclick="finalNo()">NO 😂</button>`);
+}
+function finalYes(){
+ render(`<h2>😂 Fair enough.</h2><p>Let's leave the mysteries there.</p><button onclick="ending()">CONTINUE →</button>`);
+}
+function finalNo(){
+ render(`<div class="brand warn">CHALLENGE ACCEPTED</div><h2>😈 VERY WELL.</h2><div class="hack" id="hack"></div>`);
+ runPortalSimulation();
+}
+function runPortalSimulation(){
+ const lines=[
+ "NEXUS SECURITY PROTOCOL","INITIALIZING...","VERIFYING SESSION...",
+ "SCANNING TERMINAL...","AUTHENTICATION... 100%","",
+ "ACCESS REQUEST: SIMULATION","████████████████████ 100%","",
+ "CHECKING PORTAL CONNECTION...","CHECKING CGPA RECORD...",
+ "CALCULATING...","..."
+ ];
+ let i=0,b=document.getElementById("hack");
+ let t=setInterval(()=>{
+   b.textContent+=lines[i++]+"\\n";
+   if(i>=lines.length){
+     clearInterval(t);
+     setTimeout(()=>render(`<div class="brand warn">PORTAL CHECK</div><h2>CHECK YOUR PORTAL. 👀</h2><p class="terminal">CGPA UPDATE PENDING...</p>`),3000);
+     setTimeout(()=>render(`<h2>WAIT! 😂</h2><p>I'm kidding. Your portal and CGPA are completely safe.</p><button onclick="ending()">CONTINUE →</button>`),6500);
+   }
+ },650);
+}
+function ending(){render(`<div class="brand">BEFORE YOU LEAVE...</div><h2>Know your coursemates. Know their names. 🤝</h2><p>University isn't only about lectures, examinations and grades.</p><p><b>Learn to respect one another. Help one another. Build good friendships.</b></p><p>One day, these ordinary university days will become memories. The people around you are part of a chapter of your life that you won't get to repeat.</p><div class="result"><b>And that's the end.</b><br><br>Thank you for visiting NEXUS. ❤️</div><h2>WAIT... 😂</h2><p>Okay, this is the final one. Quickly leave before we change our minds...</p><p class="warn"><b>Or we have your portal and take 2.00 from your CGPA. 💀</b></p><p>Do you think I'm lying?</p><button onclick="believe()">YES 😏</button><button onclick="dontBelieve()">NO 😂</button>`)}
+function believe(){
+  render(`<div class="brand warn">SECURITY PROTOCOL</div>
+  <h2>😈 ${user.fullName}, YOU CHOSE YES.</h2>
+  <div class="hack" id="hack2"></div>`);
+  runFakeHack2();
+}
+function runFakeHack2(){
+  const lines=[
+    "NEXUS // HACKING SIMULATION",
+    "TARGET: "+user.fullName,
+    "VERIFYING IDENTITY... ✓",
+    "CONNECTING TO: UDUS STUDENTS PORTAL [SIMULATION]",
+    "SCANNING STUDENT PROFILE... 23%",
+    "BYPASSING FIREWALL... 47%",
+    "PROCESSING PORTAL DATA... 68%",
+    "CHECKING CGPA RECORD... 84%",
+    "ACCESS SIMULATION... 100%",
+    "████████████████████ 100%",
+    "",
+    "😂 WAIT...",
+    "JUST KIDDING OO! 🤣",
+    "NO REAL PORTAL WAS ACCESSED.",
+    "YOUR NAME AND CGPA ARE SAFE. ✓"
+  ];
+  let i=0,b=document.getElementById("hack2");
+  let t=setInterval(()=>{
+    b.textContent+=lines[i++]+"\\n";
+    if(i>=lines.length){
+      clearInterval(t);
+      setTimeout(()=>render(`<div class="brand">😂 GOT YOU!</div>
+      <h2>${user.fullName}, I'm just kidding oo 🤣</h2>
+      <p>The whole hacking screen was only a fake NEXUS animation.</p>
+      <p class="terminal">UDUS Students Portal: NOT ACCESSED ✓</p>
+      <button onclick="start()">START AGAIN</button>`),1800);
+    }
+  },650);
+}
+function dontBelieve(){
+  render(`<div class="brand">NEXUS // SESSION COMPLETE</div>
+  <h2>Fair enough, ${user.fullName}. 😂</h2>
+  <p>That's good. You don't believe me. 😎</p>
+  <p class="terminal">SEE YOU AGAIN, ${user.fullName}. 👋</p>
+  <button onclick="start()">START AGAIN</button>`);
+}
+start();
+</script></body></html>
